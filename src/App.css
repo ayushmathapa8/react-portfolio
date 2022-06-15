@@ -1,38 +1,63 @@
-.App {
+body {
+  font-family: "Inria Serif", serif;
+  font-size: 1.3rem;
+}
+.nav-font {
+  font-family: "Inknut Antiqua", serif;
+}
+
+/* hero section */
+
+.hero {
+  min-height: 60vh;
+  font-weight: 600;
+  background: linear-gradient(green, orange);
+}
+
+/* title section */
+.title {
   text-align: center;
+  font-size: 600;
+  font-weight: bolder;
+  margin-bottom: 3rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title span {
+  padding: 0.5rem 2rem;
+  border-bottom: 0.4rem solid green;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* .icons */
+.icons i {
+  font-size: 5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.icons > div {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 1rem;
+  margin: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+/* Project section */
+.projects {
+  background: rgb(134, 203, 134);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.projects .row {
+  --bs-gutter-x: 0;
+}
+.c-p {
+  background: rgba(red, green, blue, alpha);
+}
+
+.projects a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* about me section */
+.about {
+  background: whitesmoke;
+  border-radius: 31px;
 }
